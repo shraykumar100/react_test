@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body,h1,h2,h3,h4,h5,h6,img{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: lighter;
+  /* border: 2px solid red; */
+}
+
+
+.profilepic{
+  border-radius: 50%;
+  width: 6vw;
+  padding: 2rem;
+}
+
+.profilediv{
+  /* display: flex; */
+  flex-direction: column;
+  /* width: 15vw; */
+  /* padding: 3rem; */
+  /* background-color: #F8F8F8; */
+  /* justify-content: space-around; */
+  /* padding: 0; */
+  /* padding: 3rem; */
+    padding: 1rem;
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optiondiv{
+  /* width: 15vw; */
+  /* background-color: #F8F8F8; */
+  padding: 1rem;
+}
+h2{
+  display: inline-block;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 60%;
+  /* position: relative;
+  bottom: 5px; */
+  color: #595282;
+}
+.optiondiv > div {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.main{
+  height: 100vh;
+  width: 15vw;
+  background-color: #F8F8F8;
+  /* border: 2px solid red; */
+  float: left;
+}
+
+.sidebaricon{
+  width: 24px;
+  height: 24px;
+}
+
+.navdiv{
+  /* float: right; */
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
+}
+.navdiv > .emailicon{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.navdiv > .profileicon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+
+.maindiv {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.maindiv > .plus {
+  width: 3rem;
+  height: 3rem;
+  background-color: #5BC59A;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.num{
+  background-color: #595282;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.headtext{
+  color: #595282;
+  font-weight: bold;
+}
+
+.maindiv > span{
+    /* display: flex; */
+  flex-direction: column;
+  /* width: 15vw; */
+  /* padding: 3rem; */
+  /* background-color: #F8F8F8; */
+  /* justify-content: space-around; */
+  /* padding: 0; */
+  /* padding: 3rem; */
+    padding: 1rem;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.maindiv > h1{
+  width: 3rem;
+  height: 3rem;
+  background-color: #5BC59A;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+}
+
+/* .tablediv{
+  width: 100%;
+
+} */
+
+table{
+  /* display: block; */
+  width: 80vw;
+  text-align: left;
+  margin: 0 25px 25px 25px;
+  border-collapse: collapse;
+  float: right;
+  color: #595282;
+}
+
+th,td{
+   /* padding: 1rem; */
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* padding: 2rem; */
+  /* width: 80vw; */
+  padding: 1rem;
+}
+
+thead > tr{
+  background-color: #F8F8F8;
+}
+td{
+  font-size: large;
+}
+
+.btndiv{
+  text-align: center;
+}
+
+.btndiv > button{
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 40px;
+  color: white;
+  /* border-color: transparent; */
+  background-color: #644BD4;
+}
+
+.btndiv > button:hover{
+  cursor: pointer;
+}
+
+td > span > img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+td > span > p{
+  margin: 0px;
+  display: inline-block;
+  padding: 0px;
+}
+
+.firsttd > span {
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.lasttd > span {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/*  */
+
+ /* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 13rem;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #644BD4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #644BD4;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+.firstth{
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.firstth > :nth-child(2){
+  background-color: #595282;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
